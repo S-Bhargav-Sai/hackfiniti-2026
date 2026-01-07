@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Innovation Tracks | HACKFINITI 2026</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css">
+</head>
+
+<body>
+  <nav>
+    <div class="nav-container">
+      <div class="logo">HACKFINITI 2026</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="themes.html">Themes</a></li>
+        <li><a href="details.html">Event Details</a></li>
+        <li><a href="faq.html">FAQs</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <main class="page-content">
+    <section class="section">
+      <h1 class="section-title">Innovation Tracks</h1>
+      <p class="section-subtitle">Choose your path to innovation and build solutions that matter</p>
+
+      <div class="themes-grid">
+        <div class="glass-card theme-card reveal">
+          <div class="theme-front">
+            <i class="ri-leaf-line theme-icon"></i>
+            <h3>Sustainability</h3>
+            <p>Build eco-friendly solutions to combat climate change, reduce waste, and promote renewable energy for a
+              greener future.</p>
+          </div>
+        </div>
+
+        <div class="glass-card theme-card reveal">
+          <div class="theme-front">
+            <i class="ri-heart-pulse-line theme-icon"></i>
+            <h3>Healthcare</h3>
+            <p>Innovate in telemedicine, health monitoring, disease prediction, and patient care to make healthcare
+              accessible to all.</p>
+          </div>
+        </div>
+
+        <div class="glass-card theme-card reveal">
+          <div class="theme-front">
+            <i class="ri-plant-line theme-icon"></i>
+            <h3>Agriculture</h3>
+            <p>Revolutionize farming with smart agriculture, crop monitoring, supply chain optimization, and sustainable
+              farming practices.</p>
+          </div>
+        </div>
+
+        <div class="glass-card theme-card reveal">
+          <div class="theme-front">
+            <div style="display: flex; justify-content: center; gap: 10px;">
+              <i class="ri-money-rupee-circle-line theme-icon"></i>
+              <i class="ri-bank-line theme-icon"></i>
+            </div>
+            <h3>FinTech</h3>
+            <p>Transform financial services with digital payments, blockchain, fraud detection, and inclusive banking
+              solutions.</p>
+          </div>
+        </div>
+
+        <div class="glass-card theme-card reveal">
+          <div class="theme-front">
+            <i class="ri-lightbulb-flash-line theme-icon"></i>
+            <h3>Open Innovation</h3>
+            <p>Think beyond boundaries! Create anything that solves real-world problems—the sky's the limit for your
+              creativity.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="bottom-center-container">
+        <a href="details.html" class="btn btn-primary nav-loop-btn" aria-label="Next">
+          Event Details <i class="ri-arrow-right-line"></i>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="social-icons">
+        <a href="https://www.instagram.com/infiniti_tech__?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+          aria-label="Instagram"><i class="ri-instagram-line"></i></a>
+        <a href="https://www.linkedin.com/in/infiniti-tech-000630335/" aria-label="LinkedIn"><i
+            class="ri-linkedin-box-line"></i></a>
+      </div>
+      <p class="footer-text">© 2026 HACKFINITI | B V Raju Institute of Technology</p>
+    </div>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+
+</html>
+
+<style>
+  .section-subtitle {
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: 1.2rem;
+    margin-top: -2rem;
+    margin-bottom: 3rem;
+  }
+
+  .themes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2.5rem;
+    margin-top: 3rem;
+  }
+
+  .theme-card {
+    padding: 3rem 2rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.5s ease;
+  }
+
+  .theme-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(191, 0, 255, 0.2), transparent);
+    transition: left 0.5s ease;
+  }
+
+  .theme-card:hover::before {
+    left: 100%;
+  }
+
+  .theme-card:hover {
+    transform: translateY(-15px) scale(1.03);
+    border-color: rgba(0, 240, 255, 0.6);
+    box-shadow:
+      0 20px 60px rgba(0, 240, 255, 0.4),
+      inset 0 0 40px rgba(191, 0, 255, 0.2);
+  }
+
+  .theme-front {
+    position: relative;
+    z-index: 2;
+  }
+
+  .theme-icon {
+    font-size: 4rem;
+    background: linear-gradient(135deg, var(--neon-purple), var(--neon-cyan));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 1.5rem;
+    display: block;
+    transition: all 0.3s ease;
+  }
+
+  .theme-card:hover .theme-icon {
+    transform: scale(1.2) rotate(5deg);
+    filter: drop-shadow(0 0 20px rgba(0, 240, 255, 0.8));
+  }
+
+  .theme-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-primary);
+    transition: all 0.3s ease;
+  }
+
+  .theme-card:hover h3 {
+    color: var(--neon-cyan);
+    text-shadow: 0 0 20px rgba(0, 240, 255, 0.5);
+  }
+
+  .theme-card p {
+    color: var(--text-secondary);
+    line-height: 1.7;
+    font-size: 1rem;
+  }
+
+  @media (max-width: 768px) {
+    .themes-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

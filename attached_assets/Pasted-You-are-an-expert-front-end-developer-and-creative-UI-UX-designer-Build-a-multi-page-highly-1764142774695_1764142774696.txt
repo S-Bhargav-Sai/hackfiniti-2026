@@ -1,0 +1,244 @@
+You are an expert front-end developer and creative UI/UX designer.
+
+Build a **multi-page**, highly interactive website for a 24-hour national-level hackathon called **HACKFINITI 2026**, hosted by **B V Raju Institute of Technology (BVRIT)**.
+
+⚠️ IMPORTANT:
+- Do **NOT** make this a single-page site.
+- Create **multiple HTML pages** with smooth navigation between them.
+- The feel should be **playful, festival-like, and interactive**, similar in spirit to moodi.org (Mood Indigo IIT Bombay), but with a **futuristic neon hackathon** theme.
+
+--------------------------------
+TECH + FILE STRUCTURE
+--------------------------------
+Create a small multi-page website with this structure:
+
+- `index.html`        → Home / Landing
+- `about.html`        → About the hackathon
+- `themes.html`       → Themes / Tracks
+- `details.html`      → Event details (rounds, dates, rules, prizes)
+- `faq.html`          → FAQs
+- `contact.html`      → Contact & social links
+- `styles.css`        → Common styles (imported by all pages)
+- `scripts.js`        → Common interactivity (imported by all pages)
+- `assets/`           → Placeholder for images/icons if needed
+
+Use:
+- **HTML5**, **CSS3 (Flexbox + Grid)**, and **Vanilla JavaScript**.
+- No React/Angular/Bootstrap. Keep it as static multi-page site.
+- You may use:
+  - **Google Fonts**
+  - Icon libraries (e.g., Remix Icons / Font Awesome via CDN)
+
+All pages must share a **consistent navbar + footer** so it feels like one unified experience.
+
+--------------------------------
+VISUAL & INTERACTION STYLE
+--------------------------------
+Overall vibe:
+- Futuristic, neon, festival-tech style.
+- Inspired by interactive event sites like Mood Indigo.
+
+Design:
+- Dark background (near-black) with **animated neon gradients** (purple, cyan, magenta, blue).
+- Use **glassmorphism cards**:
+  - Transparent panels with blur, neon borders, glow shadows.
+- Headings:
+  - Futuristic font (e.g., Orbitron/Audiowide for titles).
+  - Clean modern font (e.g., Poppins/Inter) for body.
+
+Interactivity & animation:
+- Smooth page transitions:
+  - On each page load, use a simple JS animation (e.g., fade-in + slide-up of main content).
+- Elements respond to:
+  - Hover (scale + glow)
+  - Mouse movement (slight parallax on hero backgrounds or blobs)
+- Use **CSS keyframes** for:
+  - Animated gradient backgrounds
+  - Floating blobs / shapes
+- Use **JavaScript** for:
+  - Mobile navbar toggle
+  - Scroll-based animations (IntersectionObserver or onscroll)
+  - Simple micro-interactions like “particle” dots moving slowly in the background (optional)
+
+--------------------------------
+COMMON LAYOUT ON ALL PAGES
+--------------------------------
+1. **Navbar (top, fixed or sticky)**
+   - Logo text: “HACKFINITI 2026”
+   - Links to:
+     - Home
+     - About
+     - Themes
+     - Event Details
+     - FAQs
+     - Contact
+   - On smaller screens:
+     - Collapse into a hamburger menu
+     - Animated neon slide-down menu
+
+2. **Footer**
+   - Short line:
+     - “© 2026 HACKFINITI | B V Raju Institute of Technology”
+   - Social icons (Instagram, LinkedIn) with placeholder `href="#"`.
+   - Thin neon top border and subtle glow.
+
+--------------------------------
+PAGE-BY-PAGE CONTENT
+--------------------------------
+
+📄 `index.html` (Home / Landing)
+- Hero section:
+  - Title: **HACKFINITI 2026**
+  - Subtitle: **24-Hour National Level Hackathon**
+  - Tagline: “Code. Create. Conquer Infinity.”
+  - Short description (2–3 lines) introducing the hackathon.
+  - Two glowing buttons:
+    - “Register on Unstop” (href placeholder: `#`)
+    - “Explore Themes” → link to `themes.html`
+  - Animated background:
+    - Gradient overlay
+    - A few floating neon shapes / blobs
+    - Optional mouse-follow parallax effect for shapes
+
+- “Quick Glance” section:
+  - Cards with:
+    - Dates
+    - Location (B V Raju Institute of Technology, Narsapur)
+    - Mode: Hybrid (Online + Offline)
+    - Prize Pool: ₹50,000
+    - Team Size: 3–4 members
+
+- Call-to-action strip at bottom:
+  - Fun line like: “Ready to hack into infinity?”
+  - Button: “Know More” → `about.html`
+
+📄 `about.html`
+- Section “About Hackfiniti 2026”:
+  - Describe:
+    - 24-hour national level hackathon
+    - Hosted by BVRIT
+    - Students, innovators, enthusiasts join to solve real-world problems
+  - Mention:
+    - Collaboration
+    - Learning emerging technologies
+    - Building prototypes within 24 hours
+
+- “Why this Hackathon?” section:
+  - Grid of neon cards for:
+    - Interaction with Industry Experts
+    - Collaborative Teamwork
+    - Skill Development
+    - Inclusive for All Levels
+    - Showcase Your Talent
+    - Networking Opportunities
+    - Fun & Creativity
+    - Shaping the Future
+
+📄 `themes.html`
+- Title: “Innovation Tracks”
+- Neon cards for each theme:
+  1. Sustainability
+  2. Healthcare
+  3. Agriculture
+  4. FinTech
+  5. Open Innovation
+- Each card contains:
+  - Theme name
+  - Simple icon
+  - 2–3 line description
+- Optional interaction:
+  - On hover, card “flips” or reveals extra info (pure CSS or simple JS).
+
+📄 `details.html`
+This page combines **Event Details, Rounds, Rules, Prizes**.
+
+Sections:
+
+1. **Event Snapshot**
+   - Grid/cards showing:
+     - Round 1 (Online): 4th February 2026
+     - Round 2 & 3 (Offline): 26th–27th February 2026
+     - Mode: Hybrid
+     - Location: BVRIT, Narsapur
+     - Team Size: 3–4 members
+     - Registration Fee: ₹1000 per team
+     - Prize Pool: ₹50,000
+
+2. **Rounds & Evaluation**
+   - A visual timeline or stepper:
+     - Step 1 – Round 1: Online PPT Submission
+       - PPT includes: Team details, problem statement, proposed solution, technical approach, feasibility & viability, impact & benefits.
+     - Step 2 – Round 2: Offline Pitch at BVRIT using the same PPT.
+     - Step 3 – Round 3: 24-Hour Hackathon & Prototype at BVRIT.
+       - Multiple review sessions
+       - Evaluation based on innovation, impact, complexity, feasibility, functionality
+       - Winners decided from cumulative marks.
+
+3. **Rules & Regulations**
+   - List with icons:
+     - Fair play, creativity, integrity.
+     - No plagiarism – only original work.
+     - Open-source libraries allowed with credits.
+     - Teams must bring their own laptops and required hardware.
+     - Organizers provide internet, power, workspace.
+
+4. **Prizes & Perks**
+   - Huge highlighted card:
+     - “Prize Pool: ₹50,000”
+   - Below that, smaller points:
+     - Certificates & goodies (placeholder)
+     - Networking with experts
+     - Exposure to opportunities
+
+📄 `faq.html`
+- Title: “Frequently Asked Questions”
+- Implement a **FAQ accordion** using JS:
+  - Clicking a question expands/collapses the answer.
+- Sample questions:
+  - Who can participate?
+  - Do I need hackathon experience?
+  - Can teams be from different branches/colleges?
+  - What do we bring for the offline round?
+  - Can we work on an existing idea?
+  - How are projects evaluated?
+
+📄 `contact.html`
+- Section “Contact Us”
+  - Placeholder details:
+    - Email: `hackfiniti2026@bvrit.edu`
+  - Simple contact form (non-functional is fine):
+    - Name, Email, Message, Submit button (neon-glow)
+- Social icons:
+  - Instagram, LinkedIn with `href="#"`.
+- Small map-style graphic or illustration (CSS-only is fine).
+
+--------------------------------
+RESPONSIVENESS & POLISH
+--------------------------------
+- Ensure all pages are **fully responsive**:
+  - On mobile:
+    - Navbar collapses
+    - Sections stack vertically
+    - Buttons full-width
+  - On desktop:
+    - Use multi-column grids.
+- Use consistent:
+  - Neon color palette
+  - Card style
+  - Animations & hover effects across all pages.
+
+--------------------------------
+DELIVERABLE
+--------------------------------
+Provide:
+- The full code for:
+  - `index.html`
+  - `about.html`
+  - `themes.html`
+  - `details.html`
+  - `faq.html`
+  - `contact.html`
+  - `styles.css`
+  - `scripts.js`
+- All links between pages must work (`<a href="about.html">About</a>` etc.).
+- Make the whole site feel like an **interactive neon hackathon universe**, multi-page, not a single-page app.
